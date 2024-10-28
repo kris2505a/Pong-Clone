@@ -89,17 +89,25 @@
     <ClInclude Include="Headers\Paddle.h" />
     <ClInclude Include="Headers\Log.h" />
     <ClInclude Include="Headers\MainMenu.h" />
+    <ClInclude Include="src\Headers\Ball.h" />
+    <ClInclude Include="src\Headers\Collision.h" />
+    <ClInclude Include="src\Headers\CpuPaddle.h" />
+    <ClInclude Include="src\Headers\Game.h" />
+    <ClInclude Include="src\Headers\GameMode.h" />
+    <ClInclude Include="src\Headers\Log.h" />
+    <ClInclude Include="src\Headers\MainMenu.h" />
+    <ClInclude Include="src\Headers\Paddle.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Ball.cpp" />
-    <ClCompile Include="Collision.cpp" />
-    <ClCompile Include="CpuPaddle.cpp" />
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="GameMode.cpp" />
-    <ClCompile Include="Log.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainMenu.cpp" />
-    <ClCompile Include="Paddle.cpp" />
+    <ClCompile Include="src\Ball.cpp" />
+    <ClCompile Include="src\Collision.cpp" />
+    <ClCompile Include="src\CpuPaddle.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\GameMode.cpp" />
+    <ClCompile Include="src\Log.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MainMenu.cpp" />
+    <ClCompile Include="src\Paddle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Textures\board.png" />
