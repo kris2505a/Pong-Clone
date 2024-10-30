@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\SFML Projects\\Pong-Clone\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2FBE52D0-CCEC-439F-83BE-77E07F0257E6}|GameUnnamed.vcxproj|D:\\SFML Projects\\Pong-Clone\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{2FBE52D0-CCEC-439F-83BE-77E07F0257E6}|GameUnnamed.vcxproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2FBE52D0-CCEC-439F-83BE-77E07F0257E6}|GameUnnamed.vcxproj|D:\\SFML Projects\\Pong-Clone\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2FBE52D0-CCEC-439F-83BE-77E07F0257E6}|GameUnnamed.vcxproj|solutionrelative:src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -14,15 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "D:\\SFML Projects\\Pong-Clone\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "D:\\SFML Projects\\Pong-Clone\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-30T05:53:01.155Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\SFML Projects\\Pong-Clone\\src\\main.cpp",
               "RelativeDocumentMoniker": "src\\main.cpp",
