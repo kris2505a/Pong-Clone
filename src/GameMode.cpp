@@ -61,9 +61,9 @@ void GameMode::initText() {
 
 void GameMode::increaseScore(float x) {
 	//Log::messageLog("increase score called");
-	if (x <= 0)
+	if (x <= 15)
 		p2Score++;
-	if (x >= window->getSize().x - 10)
+	if (x >= window->getSize().x - 15)
 		p1Score++;
 }
 
