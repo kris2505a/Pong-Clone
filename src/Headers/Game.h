@@ -21,6 +21,8 @@ private:
 	int isRunning{ -1 };
 	sf::Texture board;
 	sf::Sprite sprite;
+	sf::Clock clock;
+	static float deltaTime;
 
 private:
 
@@ -33,6 +35,7 @@ private:
 public:
 	void startGame();
 	static GameMode* getCurrentGameMode();
+	static float getDeltaTime();
 	Game();
 	~Game();
 

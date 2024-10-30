@@ -1,4 +1,5 @@
 #include "Headers/CpuPaddle.h"
+#include "Headers/Game.h"
 
 
 CpuPaddle::CpuPaddle(sf::Vector2f loc, float sp, sf::RenderWindow* wind, Ball* balll) 
@@ -7,7 +8,7 @@ CpuPaddle::CpuPaddle(sf::Vector2f loc, float sp, sf::RenderWindow* wind, Ball* b
 	this->ball = balll;
 }
 void CpuPaddle::movePaddle(int n) {
-	this->location.y += speed * n;
+	this->location.y += speed * n * Game::getDeltaTime();
 	this->rectangle.setPosition(location);
 	this->limitPaddle();
 }

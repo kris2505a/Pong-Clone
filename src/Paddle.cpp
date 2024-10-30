@@ -1,4 +1,5 @@
 #include "Headers/Paddle.h"
+#include "Headers/Game.h"
 
 
 
@@ -19,7 +20,7 @@ void Paddle::draw() {
 }
 
 void Paddle::movePaddle(int n) {
-	this->location.y += this->speed * n;
+	this->location.y += this->speed * n * Game::getDeltaTime();
 	rectangle.setPosition(location);
 	this->limitPaddle();
 }

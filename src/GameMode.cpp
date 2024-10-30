@@ -78,9 +78,9 @@ void GameMode::updateScore() {
 
 PvP::PvP(sf::RenderWindow* wind, sf::VideoMode* resolution) {
 	this->window = wind;
-	this->ball = new Ball(sf::Vector2f(resolution->width / 2, resolution->height / 2), 15.0f, 10.0f, window);
-	this->paddle1 = new Paddle(sf::Vector2f(20, resolution->height / 2), 13.0f, window);
-	this->paddle2 = new Paddle(sf::Vector2f(resolution->width - 20, resolution->height / 2), 8.5f, window);
+	this->ball = new Ball(sf::Vector2f(resolution->width / 2, resolution->height / 2), 15.0f, 1200.0f, window);
+	this->paddle1 = new Paddle(sf::Vector2f(20, resolution->height / 2), 2000.0f, window);
+	this->paddle2 = new Paddle(sf::Vector2f(resolution->width - 20, resolution->height / 2), 2000.0f, window);
 	Log::messageLog("Paddle1 Created");
 	Log::messageLog("Paddle2 Created");
 	this->initText();
@@ -105,9 +105,9 @@ void PvP::handleInput() {
 
 PvC::PvC(sf::RenderWindow* wind, sf::VideoMode* resolution) {
 	this->window = wind;
-	this->ball = new Ball(sf::Vector2f(resolution->width / 2, resolution->height / 2), 15.0f, 10.0f, window);
-	this->paddle1 = new Paddle(sf::Vector2f(20, resolution->height / 2), 15.0f, window);
-	this->paddle2 = new CpuPaddle(sf::Vector2f(resolution->width - 20, resolution->height / 2), 8.0f, window, ball);
+	this->ball = new Ball(sf::Vector2f(resolution->width / 2, resolution->height / 2), 15.0f, 1200.0f, window);
+	this->paddle1 = new Paddle(sf::Vector2f(20, resolution->height / 2), 2000.0f, window);
+	this->paddle2 = new CpuPaddle(sf::Vector2f(resolution->width - 20, resolution->height / 2), 1000.0f, window, ball);
 	Log::messageLog("Paddle1 Created");
 	Log::messageLog("Paddle2 Created");
 	this->initText();

@@ -25,7 +25,7 @@ void Ball::draw() {
 
 
 void Ball::update() {
-	this->location += this->speed;
+	this->location += (this->speed * Game::getDeltaTime());
 	if (this->location.y + circle.getRadius() <= 0 || this->location.y + circle.getRadius() >= 1080)
 		this->speed.y *= -1;
 	if (location.x + circle.getRadius() <= 0 || location.x + circle.getRadius() >= 1920)

@@ -3,6 +3,7 @@
 #include "Headers/Log.h"
 
 GameMode* Game::gameMode = nullptr;
+float Game::deltaTime = 0;
 
 Game::Game() {
 	this->initWindow();
@@ -43,6 +44,7 @@ void Game::startGame() {
 			if (event.type == sf::Event::Closed || sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
 				window->close();
 		}
+		deltaTime = clock.restart().asSeconds();
 		window->clear(sf::Color::Transparent);
 		tick();	
 		window->display();
@@ -90,6 +92,10 @@ void Game::update() {
 
 }
 
+
+float Game::getDeltaTime() {
+	return deltaTime;
+}
 
 
 
