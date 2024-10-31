@@ -49,7 +49,7 @@ int MainMenu::getGameMode() {
 		return (int)1;
 	else if (rectangle.getPosition() == exitLocation && sf::Keyboard::isKeyPressed(sf::Keyboard::Enter))
 		return (int)2;
-	else return -1;
+	else return (int)-1;
 	//return 1;
 
 }
