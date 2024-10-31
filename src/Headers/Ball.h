@@ -24,9 +24,8 @@ public: //public functions
 	void draw();
 	void update();
 	void bounce();
-	//bool isResetted();
 	sf::Vector2f getLocation();
-	void increaseScore();
+	
 	
 
 };
