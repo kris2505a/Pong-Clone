@@ -33,8 +33,8 @@ sf::RectangleShape Paddle::getRect() const {
 void Paddle::limitPaddle() {
 	if ((this->location.y) < 0)
 		this->location.y = 0;
-	if ((this->location.y) > (1080 - height))
-		this->location.y = 1080 - height;
+	if ((this->location.y) > (this->window->getSize().y - height))
+		this->location.y = this->window->getSize().y - height;
 	rectangle.setPosition(location);
 }
 
