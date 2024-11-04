@@ -2,11 +2,8 @@
 
 
 int main() {
-		Game* game = new Game;
-
-		game->startGame();
-
-		delete game;
+		Game game;
+		game.startGame();
 }
 
 
