@@ -29,7 +29,8 @@ void Game::initWindow() {
 	Log::messageLog("Frame limit: 120");
 	this->menu = new MainMenu(this->window);
 	this->board.loadFromFile("Textures/mainmenu.png");
-	sprite.setTexture(board);	
+	sprite.setTexture(board);
+	windowConfig.close();
 }
 
 
