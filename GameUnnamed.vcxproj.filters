@@ -103,5 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="config\window.ini" />
   </ItemGroup>
 </Project>

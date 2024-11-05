@@ -1,6 +1,8 @@
 #include "Headers/Game.h"
 #include "Headers/Collision.h"
 #include "Headers/Log.h"
+#include <fstream>
+
 
 GameMode* Game::gameMode = nullptr;
 float Game::deltaTime = 0;
@@ -12,8 +14,16 @@ Game::Game() {
 
 
 void Game::initWindow() {
-	this->resolution = sf::VideoMode(1920, 1080);
-	this->window = new sf::RenderWindow(this->resolution, "gameName", sf::Style::Titlebar | sf::Style::Close | sf::Style::Fullscreen);
+	std::ifstream windowConfig("config/window.ini");
+	if (!windowConfig.is_open()) {
+		Log::errorLog("Unable to read from config file.");
+		std::exit(0);
+	}
+	
+	std::getline(windowConfig, title);
+	windowConfig >> this->resolution.width >> this->resolution.height;
+	windowConfig >> this->fps;
+	this->window = new sf::RenderWindow(this->resolution, title, sf::Style::Titlebar | sf::Style::Close | sf::Style::Fullscreen);
 	Log::messageLog("Window created");
 	this->window->setFramerateLimit(this->fps);
 	Log::messageLog("Frame limit: 120");

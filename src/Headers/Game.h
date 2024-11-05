@@ -16,8 +16,8 @@ private:
 	sf::Event event;
 	static GameMode* gameMode;
 	MainMenu* menu;
+	std::string title;
 	int fps{ 120 };
-	//bool isRunning { false };
 	int isRunning{ -1 };
 	sf::Texture board;
 	sf::Sprite sprite;
