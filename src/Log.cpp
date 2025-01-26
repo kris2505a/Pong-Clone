@@ -6,10 +6,10 @@
 
 void Log::messageLog(const std::string&& msg) {
 
-	std::cout << GREEN <<"[Message Log]: " << msg << RESET << std::endl;
+	std::cout << GREEN <<"[Message-Log]: " << msg << RESET << std::endl;
 }
 
 void Log::errorLog(const std::string&& msg) {
 	
-	std::cout << RED << "[Error Log]: " << msg << RESET << std::endl;
+	std::cout << RED << "[Error-Log]: " << msg << RESET << std::endl;
 }
